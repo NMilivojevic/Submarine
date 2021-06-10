@@ -105,7 +105,7 @@ li {
 /* * Delivery icons --------------- */
 
 .wolt {
-    background-image: url('./css/img/delivery/wolt.png');
+    background-image: url('../css/img/delivery/wolt.png');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -577,6 +577,13 @@ li {
     word-spacing: 3px;
     border-radius: 50px;
     background-color: var(--custom-yellow);
+    transition: all .3s;
+}
+
+#offer .btn-order:hover {
+    background-color: var(--custom-red);
+    color: var(--custom-black);
+    transition: all .3s;
 }
 
 
