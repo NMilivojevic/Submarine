@@ -67,6 +67,8 @@ li {
     background-color: var(--red-hover);
     transition: all .3s;
 }
+
+
 /* ? =================================================== */
 
 
@@ -189,23 +191,23 @@ li {
 
 /* * Nav links ----------------- */
 
-.nav-links {
-    position: absolute;
-    left: 35%;
-    right: 35%;
-    top: 39%;
+.navbar .navbar-collapse .navbar-nav .nav-links {
+    margin-left: 12em;
+    text-align: center;
 }
 
-.nav-link {
+.navbar-collapse .navbar-nav .nav-link {
     font-size: 1.6rem;
     font-weight: 600;
-    padding: 0px 1em !important;
-    color: #fff !important;
+    padding: 0px 1.5em;
+    color: #fff;
     border-bottom: 1.6px solid transparent;
     transition: border-bottom .3s;
+    text-align: center;
 }
 
-.nav-link:hover {
+.navbar-collapse .navbar-nav .nav-link:hover {
+    color: var(--custom-yellow);
     border-bottom: 1.6px solid var(--custom-yellow);
     transition: border-bottom .3s;
 }
@@ -215,6 +217,7 @@ li {
 
 .nav-social {
     margin-right: 1em;
+    margin-left: 5em;
 }
 
 .nav-social .bi {
@@ -404,7 +407,7 @@ li {
 #menu .menu-item-card {
     margin-bottom: 3em;
     border-bottom: 1.2px solid var(--custom-green);
-    border-right:  2px solid var(--custom-green);
+    border-right: 2px solid var(--custom-green);
     border-end-end-radius: 20px;
 }
 
@@ -549,7 +552,6 @@ li {
     font-size: 2rem;
     padding: .2em 0px;
     letter-spacing: 2px;
-   
 }
 
 #offer .offer-text h4 {
@@ -628,7 +630,6 @@ li {
     letter-spacing: 1px;
     word-spacing: 4px;
     box-shadow: 2px 6px 2px -4px var(--custom-green);
-   
 }
 
 .about-text p {
@@ -687,6 +688,7 @@ li {
     display: flex;
     flex-direction: column;
 }
+
 .video-text h1 {
     font-size: 5rem !important;
     padding: .3em;
@@ -695,7 +697,7 @@ li {
     color: var(--custom-yellow);
 }
 
-.video-text h2{
+.video-text h2 {
     font-size: 3rem;
     padding: .3em;
     margin-bottom: .6em;
@@ -772,7 +774,6 @@ iframe {
 
 #gallery {
     margin-top: var(--section-distance);
-    
 }
 
 #gallery img {
@@ -815,9 +816,11 @@ iframe {
     font-weight: 600;
     letter-spacing: 2px;
 }
+
 .email-form {
     margin-top: 2em;
 }
+
 .email-form input {
     padding: .5em 1em;
     border-radius: 20px;
@@ -828,6 +831,7 @@ iframe {
 input:focus {
     outline: none;
 }
+
 ::placeholder {
     font-weight: 600;
     letter-spacing: 3px;
@@ -868,21 +872,23 @@ input:focus {
     border-bottom: 2px solid var(--custom-red);
     transition: all .3s;
 }
+
 .terms-form label a:hover {
     color: var(--red-hover);
     border-bottom: 2px solid var(--red-hover);
     transition: all .3s;
 }
+
 #terms {
     margin-right: 1em;
     width: 20px;
     height: 20px;
-    
 }
+
 #terms:hover {
     transition: all .3s;
-    
 }
+
 
 /* ? == NEWSLETTER END================================ 
 ?   ====================================================*/
@@ -914,6 +920,7 @@ input:focus {
 
 
 /* * footer contact------------------------------------------ */
+
 #footer h5 {
     color: var(--custom-green);
     font-size: 1.6rem;
@@ -935,6 +942,7 @@ input:focus {
     margin-top: .6em;
     transition: all .3s;
 }
+
 #footer .contact:hover {
     background-color: var(--custom-black);
     border: 2px solid var(--custom-black);
@@ -944,9 +952,11 @@ input:focus {
 #footer .contact:hover i {
     color: var(--custom-red);
 }
+
 #footer .contact:hover h4 {
     color: var(--custom-red);
 }
+
 #footer .contact i {
     font-size: 1.3rem;
     padding-right: .3em;
@@ -969,13 +979,14 @@ input:focus {
 
 .footer-links li:hover {
     border-bottom: 1px solid var(--custom-red);
-   
     transition: all .2s;
 }
+
 .footer-links li:hover a {
     color: var(--custom-red);
     transition: all .2s;
 }
+
 .footer-links li a {
     color: var(--custom-black);
     font-size: 1.4rem;
@@ -984,19 +995,24 @@ input:focus {
     letter-spacing: .5px;
 }
 
+
 /* * footer social------------------------------------------- */
+
 .right-footer {
     margin-top: 1em;
 }
+
 .right-footer p {
     font-size: 1.5em;
     font-weight: 600;
     margin-top: .5em 0px;
     letter-spacing: 1px;
 }
+
 .right-footer p a {
     transition: all .3s;
 }
+
 .right-footer p:hover a {
     color: var(--custom-red);
     transition: all .2s;
@@ -1012,11 +1028,14 @@ input:focus {
     color: #fff;
     transition: all .3s;
 }
+
 #footer .social-icons .bi:hover {
     color: var(--custom-red);
     transition: all .3s;
     cursor: pointer;
 }
+
+
 /* * footer bottom------------------------------------------- */
 
 .footer-bottom {
@@ -1036,64 +1055,17 @@ input:focus {
 /* ? == FOOTER END================================ 
 ?   ====================================================*/
 
-.navbar .navbar-toggler {
-    z-index: 1000;
-}
-
-@media (max-width: 991.98px) {
-    .navbar .navbar-collapse {
-        background: rgba(0, 0, 0, 0.85);
-        opacity: 0;
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        transition: opacity 0.35s ease;
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-        text-align: center !important;
-    }
-    .navbar .navbar-collapse.collapse {
-        display: flex;
-        opacity: 0;
-        pointer-events: none;
-    }
-    .navbar .navbar-collapse.collapsing[style*="height"] {
-        opacity: 1;
-        height: 100vh !important;
-    }
-    .navbar .navbar-collapse.collapsing {
-        opacity: 0;
-        height: 100vh;
-    }
-    .navbar .navbar-collapse.collapse.show {
-        opacity: 1;
-        pointer-events: auto;
-    }
-    .navbar .navbar-collapse .navbar-nav {
-        margin-right: initial !important;
-        margin-top: auto;
-        margin-bottom: auto;
-    }
-}
-
-@media (max-width: 991.98px) {
-    .navbar-nav {
-        margin-left: initial !important;
-    }
-}
-
 
 /* TODO Custom Classes */
 
 
 /* ! =================================================== */
+
+
 /*! ==================================================*/
 
-/* ! == MEDIA QUERY ================================ */
 
+/* ! == MEDIA QUERY ================================ */
 
 @media (min-width: 320px) and (max-width: 479.99px) {
     /* ? =================================================== */
@@ -1106,16 +1078,21 @@ input:focus {
     }
     /* * links ----------------- */
     .navbar-nav {
-        margin: 0 !important;
-        margin-top: 10em !important;
+        border-top: 2px solid var(--custom-yellow);
+        background-color: rgba(7, 85, 52, 0.911);
+        height: 77vh;
     }
-    .nav-links {
-        position: relative;
-        top: 0;
-        left: 0;
-        right: 0;
-        display: block !important;
+    .navbar .navbar-collapse .navbar-nav .nav-links {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
         line-height: 4;
+        margin-left: 0px;
+    }
+    .navbar-collapse .navbar-nav .nav-link {
+        color: var(--custom-yellow);
+        text-align: center;
     }
     .d-none {
         display: block !important;
@@ -1128,107 +1105,83 @@ input:focus {
     .btn-nav {
         display: none;
     }
-     /* ? =================================================== */
+    /* ? =================================================== */
     /* ? == NAVBAR END ================================ */
     /* ? == LANDING START ================================ */
-
-/* ? =================================================== */
-
-/* * LANDING TEXT -----------------------------------------*/
-
-#landing .landing-text {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 40%;
-    bottom: 0;
-}
-
-#landing .landing-text h3 {
-    font-size: 2.5rem;
-    padding: .5em
-}
-#landing .landing-text h1, #landing .landing-text h1 span {
-    font-size: 4rem;
-}
-
-
-/* ? == LANDING END ================================ 
+    /* ? =================================================== */
+    /* * LANDING TEXT -----------------------------------------*/
+    #landing .landing-text {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 40%;
+        bottom: 0;
+    }
+    #landing .landing-text h3 {
+        font-size: 2.5rem;
+        padding: .5em
+    }
+    #landing .landing-text h1,
+    #landing .landing-text h1 span {
+        font-size: 4rem;
+    }
+    /* ? == LANDING END ================================ 
 ?   ====================================================*/
     /* ? =================================================== */
     /* ? == OFFER START ================================*/
-   #offer .offer-dark {
-    height: 120vh;
-}
-   /* ? =================================================== */
+    #offer .offer-dark {
+        height: 120vh;
+    }
+    /* ? =================================================== */
     /* ? == OFFER END ================================*/
-
     #about .about-text {
         padding-left: 0px !important;
     }
-/* ? == NEWSLETTER START================================ 
+    /* ? == NEWSLETTER START================================ 
 ?   ====================================================*/
-
-.email-form input {
-
-    width: 200px;
-}
-
-.btn-newsletter {
-    padding: .5em 1em;
-}
-
-
-.terms-form {
-    flex-direction: column-reverse;
-    margin-top: 2em;
-    margin-left: 1em;
-    margin-right: 1em;
-}
-
-#terms {
-    margin-top: 1.5em;
-}
-
-
-/* ? == NEWSLETTER END================================ 
+    .email-form input {
+        width: 200px;
+    }
+    .btn-newsletter {
+        padding: .5em 1em;
+    }
+    .terms-form {
+        flex-direction: column-reverse;
+        margin-top: 2em;
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+    #terms {
+        margin-top: 1.5em;
+    }
+    /* ? == NEWSLETTER END================================ 
 ?   ====================================================*/
-    
-/* ? == FOOTER START================================ 
+    /* ? == FOOTER START================================ 
 ?   ====================================================*/
-
-/* * footer list------------------------------------------- */
-.footer-links {
+    /* * footer list------------------------------------------- */
+    .footer-links {
         flex-flow: wrap;
     }
-
-/* * footer social------------------------------------------- */
-.right-footer {
-    margin-top: 1em;
-}
-.right-footer p {
-    margin: .5em 0px;
-}
-
-#footer .social-icons .bi {
-    padding: 0px .4em;
-}
-
-/* * footer bottom------------------------------------------- */
-.footer-bottom {
-    margin-top: .5em;
-}
-.footer-bottom .footer-bottom-text {
-    padding: .5em 0px;
-}
-
-/* ? == FOOTER END================================ 
+    /* * footer social------------------------------------------- */
+    .right-footer {
+        margin-top: 1em;
+    }
+    .right-footer p {
+        margin: .5em 0px;
+    }
+    #footer .social-icons .bi {
+        padding: 0px .4em;
+    }
+    /* * footer bottom------------------------------------------- */
+    .footer-bottom {
+        margin-top: .5em;
+    }
+    .footer-bottom .footer-bottom-text {
+        padding: .5em 0px;
+    }
+    /* ? == FOOTER END================================ 
 ?   ====================================================*/
-  
 }
-
-
-
 
 @media (min-width: 480px) and (max-width: 766.99px) {
     /* ? == NAVBAR START================================ 
@@ -1241,19 +1194,23 @@ input:focus {
     }
     /* * Nav links ----------------- */
     .navbar-nav {
-        margin: 0 !important;
-        margin-top: 12em !important;
+        border-top: 2px solid var(--custom-yellow);
+        background-color: rgba(7, 85, 52, 0.911);
+        height: 75vh;
     }
-    .nav-links {
-        position: relative;
-        left: 0;
-        right: 0;
-        top: 0;
+    .navbar .navbar-collapse .navbar-nav .nav-links {
+        text-align: center;
+        line-height: 4;
+        margin-left: 0px !important;
+    }
+    .navbar-collapse .navbar-nav .nav-link {
+        color: var(--custom-yellow);
     }
     /* * Nav Social  ----------------- */
     .nav-social {
         margin-right: 0px;
         margin: 2em 0px;
+        color: var(--custom-yellow);
     }
     .nav-social .bi {
         padding: 0px 1em;
@@ -1262,246 +1219,219 @@ input:focus {
     .btn-nav-wrapper {
         margin-left: 0;
     }
-        /* ? == NAVBAR END================================ 
+    /* ? == NAVBAR END================================ 
 ?   ====================================================*/
     /* ? == OFFER START ================================*/
-   #offer .offer-dark {
-    height: 120vh;
-
-}
-   /* ? =================================================== */
+    #offer .offer-dark {
+        height: 120vh;
+    }
+    /* ? =================================================== */
     /* ? == OFFER END ================================*/
     /* ? == GALLERY START================================ 
 ?   ====================================================*/
-
-#gallery .col-lg-4 {
-    height: 280px;
-}
-
-/* ? == GALLERY END=============================== 
+    #gallery .col-lg-4 {
+        height: 280px;
+    }
+    /* ? == GALLERY END=============================== 
 ?   ====================================================*/
-   /* ? == FOOTER START================================ 
+    /* ? == FOOTER START================================ 
 ?   ====================================================*/
-
-/* * footer list------------------------------------------- */
-.footer-links {
+    /* * footer list------------------------------------------- */
+    .footer-links {
         flex-flow: wrap;
     }
-
-/* * footer social------------------------------------------- */
-.right-footer {
-    margin-top: 1em;
-}
-.right-footer p {
-    margin: .5em 0px;
-}
-
-#footer .social-icons .bi {
-    padding: 0px .4em;
-}
-
-/* * footer bottom------------------------------------------- */
-.footer-bottom {
-    margin-top: .5em;
-}
-.footer-bottom .footer-bottom-text {
-    padding: .5em 0px;
-}
-
-/* ? == FOOTER END================================ 
+    /* * footer social------------------------------------------- */
+    .right-footer {
+        margin-top: 1em;
+    }
+    .right-footer p {
+        margin: .5em 0px;
+    }
+    #footer .social-icons .bi {
+        padding: 0px .4em;
+    }
+    /* * footer bottom------------------------------------------- */
+    .footer-bottom {
+        margin-top: .5em;
+    }
+    .footer-bottom .footer-bottom-text {
+        padding: .5em 0px;
+    }
+    /* ? == FOOTER END================================ 
 ?   ========== */
-
-
-@media (min-width: 766px) and (max-width: 991px) {
+    @media (min-width: 767px) and (max-width: 992px) {
         /* ? == NAVBAR START================================ 
 ?   ====================================================*/
-    
-    /* * Logo --------------- */
-    #logo {
-        margin: 0px !important;
-        margin-top: 2.1em !important;
-    }
-    /* * Nav links ----------------- */
-    .navbar-nav {
-        margin: 0 !important;
-        margin-top: 11em !important;
-    }
-    .nav-links {
-        position: relative;
-        top: 0;
-        left: 0;
-        right: 0;
-    }
-    .nav-link {
-        padding: 0px 1em !important;
-    }
-    /* * Social media icons ----------------- */
-    .nav-social {
-        margin: 0px !important;
-        margin: 2em 0px !important;
-    }
-    .nav-social .bi {
-        padding: 0px 1em;
-    }
-    /* * Nav Button----------------- */
-    .btn-nav-wrapper {
-        margin: 0px;
-    }
-    .btn-nav {
-        display: block !important;
-    }    /* ? == NAVBAR END================================ 
+        /* * Logo --------------- */
+        #logo {
+            margin: 0px !important;
+            margin-top: 0px !important;
+        }
+        /* * Nav links ----------------- */
+        .navbar-collapse {
+            margin-top: 0px !important;
+        }
+        .navbar-nav {
+            margin-top: 0px !important;
+            justify-content: center;
+            align-items: center;
+        }
+        .navbar .navbar-collapse .navbar-nav .nav-links {
+            margin-left: 0px !important;
+        }
+        /* * Social media icons ----------------- */
+        .nav-social {
+            margin: 0px !important;
+        }
+        .nav-social .bi {
+            padding: 0px 1em;
+        }
+        /* * Nav Button----------------- */
+        .btn-nav-wrapper {
+            margin: 0px;
+        }
+        .btn-nav {
+            display: block !important;
+        }
+        /* ? == NAVBAR END================================ 
 ?   ====================================================*/
-
- /* ? == FOOTER START================================ 
+        /* ? == FOOTER START================================ 
 ?   ====================================================*/
-
-/* * footer social------------------------------------------- */
-.right-footer {
-    margin-top: 1em;
-}
-.right-footer p {
-    margin: .5em 0px;
-}
-
-#footer .social-icons .bi {
-    padding: 0px .4em;
-}
-
-/* * footer bottom------------------------------------------- */
-.footer-bottom {
-    margin-top: .5em;
-}
-.footer-bottom .footer-bottom-text {
-    padding: .5em 0px;
-}
-
-/* ? == FOOTER END================================ 
+        /* * footer social------------------------------------------- */
+        .right-footer {
+            margin-top: 1em;
+        }
+        .right-footer p {
+            margin: .5em 0px;
+        }
+        #footer .social-icons .bi {
+            padding: 0px .4em;
+        }
+        /* * footer bottom------------------------------------------- */
+        .footer-bottom {
+            margin-top: .5em;
+        }
+        .footer-bottom .footer-bottom-text {
+            padding: .5em 0px;
+        }
+        /* ? == FOOTER END================================ 
 ?   ========== */
-}
-@media (min-width: 991.96px) and (max-width: 1025px) {
+    }
+    @media (min-width: 992px) and (max-width: 1025px) {
         /* ? == NAVBAR START================================ 
 ?   ====================================================*/
-    
-    /* * Logo --------------- */
-    #logo {
-        margin: 0px !important;
-        margin-top: 1.7em !important;
-    }
-    /* * Nav links ----------------- */
-    .navbar-nav {
-        margin: 0 !important;
-    }
-    .nav-links {
-        position: relative;
-        top: 0;
-        left: 0;
-        right: 0;
-        margin-left: 10.5em;
-    }
-    .nav-link {
-        padding: 0px .7em !important;
-    }
-    /* * Social media icons ----------------- */
-    .nav-social {
-        margin: 0px !important;
-        margin-left: 1em !important;
-    }
-    .nav-social .bi {
-        padding: 0px .5em;
-    }
-    /* * Nav Button----------------- */
-    .btn-nav-wrapper {
-        margin: 0px;
-        margin-left: .5em;
-    }
+        /* * Logo --------------- */
+        #logo {
+            margin: 0px !important;
+            margin-top: 1.7em !important;
+        }
+        /* * Nav links ----------------- */
+        .navbar-nav {
+            margin: 0 !important;
+        }
+        .nav-links {
+            position: relative;
+            top: 0;
+            left: 0;
+            right: 0;
+            margin-left: 10.5em;
+        }
+        .nav-link {
+            padding: 0px .7em !important;
+        }
+        /* * Social media icons ----------------- */
+        .nav-social {
+            margin: 0px !important;
+            margin-left: 1em !important;
+        }
+        .nav-social .bi {
+            padding: 0px .5em;
+        }
+        /* * Nav Button----------------- */
+        .btn-nav-wrapper {
+            margin: 0px;
+            margin-left: .5em;
+        }
         /* ? == NAVBAR END================================ 
 ?   ====================================================*/
-}
-
-@media (min-width: 1025px) and (max-width: 1280px) {
-    /* ? == NAVBAR START================================ 
+    }
+    @media (min-width: 1025px) and (max-width: 1280px) {
+        /* ? == NAVBAR START================================ 
 ?   ====================================================*/
-    
-    /* * Logo --------------- */
-    #logo {
-        margin: 0px !important;
-        margin-top: 1.7em !important;
-    }
-    /* * Nav links ----------------- */
-    .navbar-nav {
-        margin: 0 !important;
-    }
-    .nav-links {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        margin-left: 10.5em;
-    }
-    .nav-link {
-        padding: 0px .7em !important;
-    }
-    /* * Social media icons ----------------- */
-    .nav-social {
-        margin: 0px !important;
-        margin-left: 1em !important;
-
-    }
-    .nav-social .bi {
-        padding: 0px .3em;
-    }
-    /* * Nav Button----------------- */
-    .btn-nav-wrapper {
-        margin: 0px;
-        margin-left: .5em;
-    }
-    .btn-nav {
-        display: block !important;
-    }
+        /* * Logo --------------- */
+        #logo {
+            margin: 0px !important;
+            margin-top: 1.7em !important;
+        }
+        /* * Nav links ----------------- */
+        .navbar-nav {
+            margin: 0;
+        }
+        .nav-links {
+            position: relative;
+            top: 0;
+            left: 0;
+            right: 0;
+            margin-left: 10.5em;
+        }
+        .nav-link {
+            padding: 0px .7em !important;
+        }
+        /* * Social media icons ----------------- */
+        .nav-social {
+            margin: 0px !important;
+            margin-left: 1em !important;
+        }
+        .nav-social .bi {
+            padding: 0px .3em;
+        }
+        /* * Nav Button----------------- */
+        .btn-nav-wrapper {
+            margin: 0px;
+            margin-left: .5em;
+        }
+        .btn-nav {
+            display: block !important;
+        }
         /* ? == NAVBAR END================================ 
 ?   ====================================================*/
-}
-
-
-
-@media (min-width: 1200px) and (max-width: 1280px){
-       /* ? == NAVBAR START================================ 
+    }
+    @media (min-width: 1200px) and (max-width: 1280px) {
+        /* ? == NAVBAR START================================ 
 ?   ====================================================*/
-    
-    /* * Logo --------------- */
-    #logo {
-        margin: 0px !important;
-        margin-top: 1.7em !important;
-    }
-    /* * Nav links ----------------- */
-    .navbar-nav {
-        margin: 0 !important;
-        margin-top: 1.5em !important;
-    }
-    .nav-links {
-        position: relative;
-        top: 0;
-        left: 0;
-        right: 0;
-        margin-left: 15.5em;
-    }
-    .nav-link {
-        padding: 0px .7em !important;
-    }
-    /* * Social media icons ----------------- */
-    .nav-social {
-        margin: 0px !important;
-        margin-left: 6em !important;
-    }
-    .nav-social .bi {
-        padding: 0px .5em;
-    }
-    /* * Nav Button----------------- */
-    .btn-nav-wrapper {
-        margin: 0px;
-        margin-left: 1em;
-    }
+        /* * Logo --------------- */
+        #logo {
+            margin: 0px !important;
+            margin-top: 1.7em !important;
+        }
+        /* * Nav links ----------------- */
+        .navbar-nav {
+            margin: 0 !important;
+            margin-top: 1.5em !important;
+        }
+        .nav-links {
+            position: relative;
+            top: 0;
+            left: 0;
+            right: 0;
+        }
+        .nav-link {
+            padding: 0px .7em !important;
+        }
+        /* * Social media icons ----------------- */
+        .nav-social {
+            margin: 0px !important;
+            margin-left: 6em !important;
+        }
+        .nav-social .bi {
+            padding: 0px .5em;
+        }
+        /* * Nav Button----------------- */
+        .btn-nav-wrapper {
+            margin: 0px;
+            margin-left: 1em;
+        }
         /* ? == NAVBAR END================================ 
 ?   ====================================================*/
-}
+    }
 }
