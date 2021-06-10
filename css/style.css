@@ -28,7 +28,7 @@ html {
 }
 
 body {
-    background-image: url('./css/img/background.jpg');
+    background-image: url('./img/background.jpg');
 }
 
 h1,
@@ -105,7 +105,7 @@ li {
 /* * Delivery icons --------------- */
 
 .wolt {
-    background-image: url('./css/img/delivery/wolt.png');
+    background-image: url('./img/delivery/wolt.png');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -115,7 +115,7 @@ li {
 }
 
 .glovo {
-    background-image: url('./css/img/delivery/glovo.png');
+    background-image: url('./img/delivery/glovo.png');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
