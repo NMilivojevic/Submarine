@@ -28,7 +28,7 @@ html {
 }
 
 body {
-    background-image: url('/css/img/background.jpg');
+    background-image: url('./css/img/background.jpg');
 }
 
 h1,
@@ -105,7 +105,7 @@ li {
 /* * Delivery icons --------------- */
 
 .wolt {
-    background-image: url('../css/img/delivery/wolt.png');
+    background-image: url('./css/img/delivery/wolt.png');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
