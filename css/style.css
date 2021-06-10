@@ -598,7 +598,7 @@ li {
 }
 
 .about-img {
-    background-image: url('./css/img/about/1.jpg');
+    background-image: url('./img/about/1.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -637,7 +637,7 @@ li {
 }
 
 .signature {
-    background-image: url('./css/img/about/signature.png');
+    background-image: url('./img/about/signature.png');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -669,7 +669,7 @@ li {
 }
 
 .video-img {
-    background-image: url('./css/img/video-demo/1.jpg');
+    background-image: url('./img/video-demo/1.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -902,7 +902,7 @@ input:focus {
 /* * footer logo------------------------------------------- */
 
 #footer .footer-logo {
-    background-image: url('./css/img/logo.png');
+    background-image: url('./img/logo.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
