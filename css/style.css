@@ -86,7 +86,7 @@ li {
 /* * Delivery icons --------------- */
 
 .wolt {
-    background-image: url('/css/img/delivery-icons/wolt.png');
+    background-image: url('/css/img/delivery/wolt.png');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -96,7 +96,7 @@ li {
 }
 
 .glovo {
-    background-image: url('/css/img/delivery-icons/glovo.png');
+    background-image: url('/css/img/delivery/glovo.png');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
