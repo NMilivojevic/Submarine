@@ -1061,7 +1061,7 @@ input:focus {
 
 /* ! Media queries  */
 
-@media (min-width:296px) and (max-width: 320px) {
+@media (min-width:296px) and (max-width: 322px) {
     body {
         background-color: red;
     }
@@ -1077,14 +1077,14 @@ input:focus {
     .navbar-nav {
         border-top: 2px solid var(--custom-yellow);
         background-color: rgba(7, 85, 52, 0.911);
-        height: 77vh;
+        height: 67vh;
     }
     .navbar .navbar-collapse .navbar-nav .nav-links {
         flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align: center;
-        line-height: 4;
+        line-height: 2.5;
         margin-left: 0px;
     }
     .navbar-collapse .navbar-nav .nav-link {
@@ -1196,7 +1196,7 @@ input:focus {
 ?   ====================================================*/
 }
 
-@media (min-width: 321px) and (max-width: 375px) {
+@media (min-width: 323px) and (max-width: 377px) {
     body {
         background-color: blue;
     }
@@ -1219,7 +1219,7 @@ input:focus {
         justify-content: center;
         align-items: center;
         text-align: center;
-        line-height: 4;
+        line-height: 3.5;
         margin-left: 0px;
     }
     .navbar-collapse .navbar-nav .nav-link {
@@ -1333,7 +1333,7 @@ input:focus {
 ?   ====================================================*/
 }
 
-@media (min-width: 376px) and (max-width: 425px) {
+@media (min-width: 378px) and (max-width: 425px) {
     body {
         background-color: orange;
     }
@@ -1821,11 +1821,4 @@ input:focus {
     body {
         background-color: purple;
     }
-}
-
-
-}
-
-}
-
 }
