@@ -1,4 +1,17 @@
-
+:root {
+    --custom-yellow: #FCD129;
+    --custom-red: #ec5646;
+    --custom-black: #4A4A49;
+    --custom-green: #3EB498;
+    --overlay: #00000099;
+    --white-hover: #ffffff80;
+    --red-hover: #ff7e7e;
+    --yellow-hover: #fcfc67;
+    --section-distance: 5em;
+}
+body {
+    background-color: var(--custom-black);
+}
 .loader {
   display: flex;
   justify-content: center;
@@ -8,9 +21,9 @@
 
 .loader > span {
   display: inline-block;
-  background-color: #ec5646;
-  width: 15px;
-  height: 15px;
+  background-color: var(--custom-yellow);
+  width: 0px;
+  height: 0px;
   border-radius: 50%;
   margin: 0 8px;
   transform: translate3d(0);
@@ -18,19 +31,19 @@
 }
 
 .loader > span:nth-child(2) {
-  background-color: #FCD129;
+  background-color: var(--custom-green);
   animation-delay: 0.2s;
 }
 
 .loader > span:nth-child(3) {
   animation-delay: 0.4s;
-  background-color: #4A4A49;
+  background-color: var(--custom-red);
 }
 
 @keyframes bounce {
   to {
-    width: 15px;
-    height: 15px;
+    width: 30px;
+    height: 30px;
     transform: translate3d(0, -16px, 0);
   }
 }
