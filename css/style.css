@@ -1105,7 +1105,6 @@ input:focus {
 
 
 /* ! Media queries  */
-
 @media (min-width:296px) and (max-width: 322px) {
 
     /* ? =================================================== */
@@ -1388,7 +1387,7 @@ input:focus {
     .navbar-nav {
         border-top: 2px solid var(--custom-yellow);
         background-color: rgba(7, 85, 52, 0.911);
-        height: 77vh;
+        height: 75vh;
     }
     .navbar .navbar-collapse .navbar-nav .nav-links {
         flex-direction: column;
