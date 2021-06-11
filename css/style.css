@@ -28,7 +28,7 @@ html {
 }
 
 body {
-    background-image: url('./img/background.jpg');
+   background-color: var(--custom-green);
 }
 
 h1,
@@ -46,7 +46,17 @@ li {
     text-decoration: none;
     list-style-type: none;
 }
-
+.preload-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    display: none;
+    transition: opacity 3s ease-in;
+}
+#background-img {
+    background-image: url('./img/background.jpg');
+}
 .bi-arrow-up {
     position: fixed;
     bottom: 10px;
@@ -68,6 +78,46 @@ li {
     transition: all .3s;
 }
 
+/* * ANIMATION -----------------------------------------*/
+
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+.animated {
+    animation-duration: 4s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 4s;
+    -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+    opacity: 0
+}
+
+.fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
 
 /* ? =================================================== */
 
@@ -369,7 +419,6 @@ li {
 #landing .landing-text h1 span {
     color: var(--custom-yellow);
 }
-
 
 /* ? == LANDING END ================================ 
 ?   ====================================================*/
@@ -1062,9 +1111,7 @@ input:focus {
 /* ! Media queries  */
 
 @media (min-width:296px) and (max-width: 322px) {
-    body {
-        background-color: red;
-    }
+
     /* ? =================================================== */
     /* ? == NAVBAR START ================================ */
     /* * logo ----------------- */
@@ -1197,9 +1244,7 @@ input:focus {
 }
 
 @media (min-width: 323px) and (max-width: 377px) {
-    body {
-        background-color: blue;
-    }
+ 
     /* ? =================================================== */
     /* ? == NAVBAR START ================================ */
     /* * logo ----------------- */
@@ -1334,9 +1379,7 @@ input:focus {
 }
 
 @media (min-width: 378px) and (max-width: 425px) {
-    body {
-        background-color: orange;
-    }
+  
     /* ? =================================================== */
     /* ? == NAVBAR START ================================ */
     /* * logo ----------------- */
@@ -1471,9 +1514,7 @@ input:focus {
 }
 
 @media (min-width: 426px) and (max-width: 768px) {
-    body {
-        background-color: green;
-    }
+
     /* ? =================================================== */
     /* ? == NAVBAR START ================================ */
     /* * logo ----------------- */
@@ -1584,9 +1625,7 @@ input:focus {
 }
 
 @media (min-width: 769px) and (max-width: 992px) {
-    body {
-        background-color: pink;
-    }
+  
     /* ? =================================================== */
     /* ? == NAVBAR START ================================ */
     /* * logo ----------------- */
@@ -1660,9 +1699,7 @@ input:focus {
 }
 
 @media (min-width: 993px) and (max-width: 1024px) {
-    body {
-        background-color: teal
-    }
+  
     /* ? =================================================== */
     /* ? == NAVBAR START ================================ */
     /* * logo ----------------- */
@@ -1699,9 +1736,7 @@ input:focus {
 }
 
 @media (min-width: 1025px) and (max-width: 1199px) {
-    body {
-        background-color: teal;
-    }
+  
     /* ? =================================================== */
     /* ? == NAVBAR START ================================ */
     /* * logo ----------------- */
@@ -1812,13 +1847,9 @@ input:focus {
 }
 
 @media (min-width: 1441px) and (max-width: 2560px) {
-    body {
-        background-color: yellow;
-    }
+ 
 }
 
 @media (min-width: 2561px) {
-    body {
-        background-color: purple;
-    }
+
 }
